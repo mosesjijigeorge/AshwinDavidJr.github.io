@@ -1,0 +1,155 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 Mar, 2020, 7:32:12 AM
+    Author     : Ashwin D JR
+*/
+.cl-effect-21 a {
+	padding: 10px;
+	color: #237546;
+	font-weight: 700;
+	text-shadow: none;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.cl-effect-21 a::before,
+.cl-effect-21 a::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-21 a::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-21 a::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.cl-effect-21 a:hover,
+.cl-effect-21 a:focus {
+	color: #fff;
+}
+
+.cl-effect-21 a:hover::before,
+.cl-effect-21 a:focus::before,
+.cl-effect-21 a:hover::after,
+.cl-effect-21 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+html{
+	scroll-behavior: smooth;
+       
+}
+
+
+body{
+     background: black;
+        background: linear-gradient(to bottom,black,purple);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%
+    
+}
+.nav{
+	background-color: white;
+	width: 100px;
+	height: 100%;
+	position: fixed;
+	left: 0;
+        border-radius: 20px;
+}
+#home{
+	color: white
+}
+
+
+#admin{
+	color: white;
+}
+#advisor{
+	color: white;
+}
+#staff{
+	color: white;
+}
+
+#student{
+	color: white
+}
+
+.box{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.example_f{
+   height: 100px;
+   border-radius: 0;
+   background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+   border: none;
+   color: yellow;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 12px;
+   padding: 10px;
+   width: 100px;
+   transition: all 0.4s;
+   cursor: pointer;
+   
+   
+
+ }
+ .example_f span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+ }
+ .example_f span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ .example_f:hover span {
+   padding-right: 25px;
+   border-radius: 50px
+ }
+ .example_f:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
+
